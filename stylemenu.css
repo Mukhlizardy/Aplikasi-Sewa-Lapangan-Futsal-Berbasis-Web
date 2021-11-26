@@ -1,0 +1,265 @@
+/*CSS header*/
+.logout{
+	text-decoration: none;
+	color: white;
+	padding:10px 12px;
+	font-size: 20px;
+}
+
+.logout:hover{
+	border-radius: 5px;
+	color: black; 
+	background-color:whitesmoke;
+}
+
+.judul{
+	color: white;
+	padding: 15px;
+	padding-bottom: 2px;
+	padding-left: 30px;
+	text-align: right;
+}
+
+* {
+	padding:0;
+	margin:0;
+	background-image: url(img);
+}
+
+body {
+	font-family:Helvetica, Geneva, sans-serif;
+	font-size:18px;
+	background-color: white;
+}
+
+header {
+	width:100%;
+	height: 80px;
+	background-color: red;
+	z-index:1000;
+}
+
+.menu-bar {
+	color: white;
+	font-size:32px;
+	cursor:pointer;
+	padding:0px 86px 0px 30px;
+	margin-top:5px;
+}
+
+.menu-bar:hover {
+	border-radius: 0px 5px 0px 0px;
+	color: black; 
+	background-color:white;
+}
+
+#tag-menu {
+	display:none;
+}
+
+
+#tag-menu:checked ~ div.jw-drawer {
+ animation: slide-in 0.5s ease;
+ animation-fill-mode: forwards;
+}
+
+.jw-drawer {
+	position:fixed;
+	left:-280px;
+	background-color: red;
+	height:100%;
+	z-index:100;
+	width:230px;
+	animation: slide-out 0.5s ease;
+	animation-fill-mode: forwards;
+}
+
+.jw-drawer ul li {
+	list-style:none;
+}
+
+.jw-drawer ul li a {
+	padding:10px 20px;
+	text-decoration:none;
+	display:block;
+	color: white;
+	border-bottom:1px solid rgb(55, 40, 22);
+}
+
+.jw-drawer ul li a:hover{
+	background-color:white;
+	color: black;
+}
+
+@keyframes slide-in {
+ from {left: -280px;}
+ to {left: 0;}
+}
+
+@keyframes slide-out {
+ from {left: 0;}
+ to {left: -280px;}
+}
+
+
+.content{
+  padding: 20px 0px 80px 250px;
+}
+
+/*CSS searching*/
+form {
+    width:500px;
+    margin-top: 10px;
+}
+.search {
+    padding:8px 15px;
+    background:whitesmoke;
+    border:1px solid gray;
+    border-radius: 5px 0px 0px 5px;
+}
+.button {
+	border-radius: 0px 5px 5px 0px;
+    position:relative;
+    padding:7px 15px;
+    left:-8px;
+    border:2px solid  #33cd77;
+    background-color:mediumseagreen;
+    color:white;
+}
+.button:hover  {
+    background-color: whitesmoke;
+    color: mediumseagreen;
+}
+
+/*css button create*/
+.btncreate{
+	margin-top: 10px;
+	border-radius: 5px;
+    padding:7px 15px;
+    border:2px solid  rgb(187, 17, 51);
+    background-color: crimson;
+    color:white;
+}
+.btncreate:hover  {
+    background-color: whitesmoke;
+    color: crimson;
+}
+
+/*CSS FOOTER*/
+.footer{
+	font-size: 12px;
+	text-align: center;
+    height:50px;
+    line-height:50px;
+    background:darkblue;
+    color: white;
+ 
+    position: fixed;
+    bottom:0px;
+ 
+    width:100%; 
+}
+
+/* Table */
+.demo-table {
+	border-collapse: collapse;
+	font-size: 13px;
+}
+.demo-table th, 
+.demo-table td {
+	border: 1px solid #e1edff;
+	padding: 7px 17px;
+}
+/* Table Header */
+.demo-table thead th {
+	background-color: dimgrey;
+	color: #FFFFFF;
+	border-color: #6ea1cc !important;
+	text-transform: uppercase;
+}
+/* Table Body */
+	.demo-table tbody td {
+	color: #353535;
+}
+.demo-table tbody tr:nth-child(odd) td {
+	background-color: #f4fbff;
+}
+.demo-table tbody tr:hover td {
+	background-color: #ffffa2;
+	border-color: #ffff0f;
+	transition: all .2s;
+}
+/*CSS AKSI*/
+.aksi .edit,
+.aksi .hapus{
+	padding: 5px; 
+	font-weight: bold;
+	text-decoration: none; 
+	border-radius: 5px; 
+}
+
+
+/*CSS INPUT TAMBAH DATA*/
+.input{
+	font-size: 18px;
+	padding: 2px;
+}
+
+
+/*CSS form confirm transaksi*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ 
+div.kontenform{
+	box-shadow: 2px 2px 20px red;
+    background: ivory;
+    width: 350px;
+    margin-bottom: 70px;
+    min-height: 256px;
+    overflow: hidden;
+}
+ 
+div.artikel{
+    padding:10px 22px 0;
+    color: gray;
+}
+ 
+div.artikel div.grup{
+    margin: 16px 0;
+}
+ 
+div.artikel div.grup input[type="text"]{
+    width: 300px;
+    height: 30px;
+    padding: 0 10px;
+    background: lemonchiffon;
+    border: none;
+    color: black;
+    font-size: 11pt;
+}
+ 
+div.artikel div.grup input[type="submit"]{
+    background: mediumseagreen;
+    padding: 6px 20px;
+    margin: 0 0 0 85px;
+    border: 1px solid #33cd77;
+    border-radius: 3px;
+    color: white;
+    font-size: 14pt;
+    cursor: pointer;
+}
+ 
+div.artikel div.grup input[type="submit"]:hover{
+    background: #28a45e;
+}
+
+/*CSS Tanggal*/
+div.artikel div.grup input[type="date"]{
+    background-color: lemonchiffon;
+    height: 30px;
+    text-transform: uppercase;
+}
